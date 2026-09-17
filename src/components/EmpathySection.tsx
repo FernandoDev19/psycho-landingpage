@@ -7,6 +7,7 @@ import {
   CheckCircleIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import { Suspense } from "react";
 
 const chatCards = [
   {
@@ -33,7 +34,7 @@ const chatCards = [
 
 const pillars = [
   {
-    title: "Canalizar la tensión emocional",
+    title: "Regulación emocional",
     desc: "Comprende el origen de tus emociones en un entorno de aceptación y escucha.",
     icon: HeartIcon,
   },
@@ -79,13 +80,18 @@ export default function EmpathySection() {
 
               <div className="space-y-4 text-base sm:text-lg text-neutral-600 leading-relaxed font-normal">
                 <p>
-                  ¿Llegas al final de la jornada exhausto pero con la mente llena de preocupaciones inconclusas?
+                  ¿Llegas al final de la jornada exhausto pero con la mente
+                  llena de preocupaciones inconclusas?
                 </p>
                 <p>
-                  ¿Tratas de mantener todo bajo control mientras sientes una creciente sensación de tensión, cansancio o desconexión interior?
+                  ¿Tratas de mantener todo bajo control mientras sientes una
+                  creciente sensación de tensión, cansancio o desconexión
+                  interior?
                 </p>
                 <p>
-                  A muchas personas se les ha enseñado a priorizar las expectativas externas sin aprender herramientas para proteger su propio equilibrio emocional.
+                  A muchas personas se les ha enseñado a priorizar las
+                  expectativas externas sin aprender herramientas para proteger
+                  su propio equilibrio emocional.
                 </p>
               </div>
 
@@ -114,7 +120,8 @@ export default function EmpathySection() {
               </div>
 
               <p className="text-primary font-semibold text-base sm:text-lg italic border-l-4 border-primary pl-4 py-1">
-                Lo más agotador es sentir que tu propia esencia se desdibuja entre tantas responsabilidades.
+                Lo más agotador es sentir que tu propia esencia se desdibuja
+                entre tantas responsabilidades.
               </p>
             </div>
 
@@ -122,18 +129,24 @@ export default function EmpathySection() {
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-sm sm:max-w-md">
                 <div className="relative bg-white p-3 rounded-3xl shadow-xl border border-purple-100">
-                  <Image
-                    className="rounded-2xl object-cover w-full h-[380px] sm:h-[440px]"
-                    src="/imgs/espacio-para-ti.webp"
-                    alt="Bienestar emocional"
-                    width={400}
-                    height={500}
-                    unoptimized
-                  />
+                  <Suspense fallback={<div>Cargando...</div>}>
+                    <Image
+                      className="rounded-2xl object-cover w-full h-[380px] sm:h-[440px]"
+                      src="/imgs/espacio-para-ti.webp"
+                      alt="Bienestar emocional"
+                      width={400}
+                      height={500}
+                      unoptimized
+                      priority={false}
+                    />
+                  </Suspense>
                   <div className="absolute -bottom-5 -left-4 sm:-left-6 bg-white p-4 rounded-2xl shadow-lg border border-purple-100 max-w-[240px]">
-                    <p className="text-xs text-neutral-500 font-medium">Recordatorio diario</p>
+                    <p className="text-xs text-neutral-500 font-medium">
+                      Recordatorio diario
+                    </p>
                     <p className="text-xs font-bold text-primary mt-1">
-                      &quot;Cuidar de ti no es egoísmo, es una necesidad fundamental.&quot;
+                      &quot;Cuidar de ti no es egoísmo, es una necesidad
+                      fundamental.&quot;
                     </p>
                   </div>
                 </div>
@@ -151,10 +164,12 @@ export default function EmpathySection() {
               Reflexiones Habituales
             </div>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Cuando guardas silencio, el estrés emocional termina pasando factura
+              Cuando guardas silencio, el estrés emocional termina pasando
+              factura
             </h3>
             <p className="text-purple-200 text-sm sm:text-base">
-              Mensajes internos que muchas personas experimentan cuando el agotamiento se acumula:
+              Mensajes internos que muchas personas experimentan cuando el
+              agotamiento se acumula:
             </p>
           </div>
 
@@ -177,7 +192,8 @@ export default function EmpathySection() {
 
           <div className="max-w-2xl mx-auto pt-4 space-y-6">
             <p className="text-purple-200 text-sm sm:text-base leading-relaxed">
-              Si no atiendes estas señales a tiempo, la sobrecarga puede debilitar tu salud física, emocional y tus relaciones.
+              Si no atiendes estas señales a tiempo, la sobrecarga puede
+              debilitar tu salud física, emocional y tus relaciones.
             </p>
 
             <h4 className="text-xl sm:text-2xl font-bold text-amber-300 tracking-wide">

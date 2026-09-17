@@ -35,10 +35,10 @@ export default function AboutMeSection() {
                 <div className="mt-4 bg-white p-4 rounded-2xl shadow-sm border border-purple-100 flex items-center justify-between">
                   <div>
                     <p className="text-2xl font-extrabold text-primary">
-                      Enfoque Terapéutico
+                      Lema de consulta
                     </p>
                     <p className="text-xs font-medium text-neutral-500">
-                      Transformando Vidas en la Práctica Psicologica
+                      Tus heridas no son tu identidad ni determinan tu valor
                     </p>
                   </div>
                   <div className="w-10 h-10 rounded-full bg-purple-100 text-primary flex items-center justify-center font-bold text-lg">
@@ -91,10 +91,10 @@ export default function AboutMeSection() {
                   Terapia Cognitivo-Conductual
                 </span>
                 <span className="bg-purple-50 border border-purple-200 text-primary font-semibold text-xs px-3 py-1.5 rounded-xl">
-                  Perspectiva Sistémica Familiar
+                  Terapia de esquemas
                 </span>
                 <span className="bg-purple-50 border border-purple-200 text-primary font-semibold text-xs px-3 py-1.5 rounded-xl">
-                  Acompañamiento Humanista
+                  Estrategias integrales
                 </span>
               </div>
             </div>

@@ -17,7 +17,7 @@ const services = [
       "Desarrollar herramientas prácticas para manejar la ansiedad y el estrés",
       "Reconectar con tu proyecto de vida e identidad",
     ],
-    wspText: "Hola Isaura! Quisiera iniciar un proceso terapéutico individual para mujeres."
+    wspText: "Hola Isaura! Quisiera iniciar un proceso terapéutico individual."
   },
   {
     icon: HeartIcon,

@@ -1,3 +1,4 @@
+import { HeartIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 export default function Hero() {
@@ -93,7 +94,7 @@ export default function Hero() {
                 {/* Floating Badge Card */}
                 <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-purple-100 flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-purple-100 text-primary flex items-center justify-center font-bold text-xl shrink-0">
-                    🌿
+                    <HeartIcon className="size-7"></HeartIcon>
                   </div>
                   <div>
                     <p className="font-bold text-neutral-800 text-sm">
