@@ -1,6 +1,6 @@
 export default function WspFloatButton() {
   return (
-    <a href="https://api.whatsapp.com/send/?phone=573142099080&text=Hola%21+Me+gustar%C3%ADa+iniciar+un+proceso+terapeutico&type=phone_number&app_absent=0">
+    <a target="_blank" href="https://api.whatsapp.com/send/?phone=573142099080&text=Hola%21+Me+gustar%C3%ADa+iniciar+un+proceso+terapeutico&type=phone_number&app_absent=0">
       <button className="animate-bounce fixed bottom-20 md:bottom-6 right-4 md:right-6 bg-green-500 text-white p-4 rounded-full shadow-xl border border-green-500/30 active:scale-98 transition-transform cursor-pointer z-10000">
         <svg
           xmlns="http://www.w3.org/2000/svg"
