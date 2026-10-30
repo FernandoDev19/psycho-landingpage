@@ -1,7 +1,6 @@
 export default function CallActionSection() {
   return (
     <section
-      id="contact"
       className="w-full bg-linear-to-r from-purple-900 via-purple-800 to-indigo-950 text-white py-16 sm:py-20 lg:py-24 relative overflow-hidden"
     >
       {/* Background glow effects */}

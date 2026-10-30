@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
 
           {/* Col 3: Contact */}
-          <div className="space-y-4">
+          <div className="space-y-4" id="contact">
             <h4 className="text-base font-bold text-white tracking-wide">
               Atención al Paciente
             </h4>
@@ -143,7 +143,7 @@ export default function Footer() {
 
         {/* Bottom copyright */}
         <div className="pt-8 border-t border-slate-900 text-center text-xs text-slate-500 font-medium">
-          <p>Todos los derechos reservados © {new Date().getFullYear()} Isaura Flórez - Psicología Clínica</p>
+          <p>Todos los derechos reservados © {new Date().getFullYear()} Isaura Flórez - Psicóloga</p>
         </div>
       </div>
     </footer>
